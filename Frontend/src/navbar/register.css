@@ -1,0 +1,60 @@
+/* register.css */
+
+#register {
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 19em;
+    padding: 2em;
+    border: solid rgb(56, 56, 56) 1px;
+    border-radius: 26px;
+    background-color: rgb(60, 69, 103);
+} 
+
+#register form {
+    display: flex;
+    flex-direction: column;
+}
+
+#register form p.text {
+    margin: 0.8em 0;
+}
+
+#register input[type="text"],
+#register input[type="password"],
+#register input[type="email"] {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} 
+
+#register button {
+    margin-top: 1em;
+}
+
+/* .close {
+    border-radius:7px;
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    top: -1px;
+    right: 13px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+} */
+/* .close span {
+    position: relative;
+    bottom: 2px;
+    left: 1px;
+} */
+  
+/* .close:hover {
+    background-color: gray;
+} */
+/* Add additional styles as needed */

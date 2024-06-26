@@ -1,0 +1,147 @@
+#network{
+    /* border: 1px solid; */
+    width: 68em;
+}
+
+#top{
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    padding:0.9em  0px;
+    border-bottom: 1px solid rgb(103, 103, 103);
+    /* border: 2px solid red; */
+}
+
+#layersContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top:1em;
+    /* border: 2px solid red; */
+}
+
+#svg{
+    top: 0px;
+    left: 0px;
+    position:absolute;
+    /* z-index: 7000; */
+}
+
+#playPause{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+    border: none;
+    background-color:var(--secondry_color) ;
+    color: azure;
+    transform:scale(1.8);
+}
+.stepReset{
+  border: none;
+  background:none;
+  color: rgb(42, 37, 37);
+  transform: scale(1.5); 
+}
+
+#playButtons{
+    /* border: 2px solid purple; */
+    display: flex;
+    z-index:1;
+    /* margin-right:10px; */
+}
+#playButtons button{
+    margin: 1em;
+}
+#layerHandle{
+    /* border: 2px solid purple; */
+    display: flex;
+    align-items: center;
+    margin-left:8em;
+    z-index:1;
+}
+
+#layerHandle button{
+   margin: 0.7em;
+}
+
+#layerHandle .plusMinus{
+    border: none;
+    background: none;
+    height: 1.9em;
+    width: 1.9em;
+    transform: scale(1.3);
+    background-color: rgb(233, 230, 230);
+    border-radius: 50%
+}
+.plusMinus:hover{
+    background-color: rgb(174, 174, 174);
+    /* border-radius: 50%; */
+}
+
+#epoch{
+    margin-left: 1.2em;
+    position: relative;
+    /* border: 2px solid brown; */
+    width: 6em;
+}
+#epoch p {
+    margin:0px 0px;
+}
+
+#epoch::before{
+    content: "Epoch";
+    position: absolute;
+    top:-1em;
+    left:0.1em;
+    font-size:0.9em;
+}
+#epoch .special{
+    font-size: 1.8em;
+}
+.special{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+#hiddenLayers{
+    margin-left:1em;
+}
+
+#hiddenLayers p{
+    display: inline-block;
+    margin:0px 3px ;
+    /* border: 2px solid teal; */
+}
+path{
+    z-index:10 ;
+}
+
+.link{
+    opacity: 0;
+    z-index: 10;
+}
+.link:hover {
+   opacity: 0 !important;
+}
+
+.hoverCardWeights{
+   position:absolute;
+   display: block;
+   padding: 0.3em 0.5em;
+   color:white ;
+   background-color: var(--secondry_color);
+   border-radius: 5px;
+   z-index:2;
+}
+
+@keyframes dash-animation {
+    from {
+      stroke-dashoffset: 0;
+    }
+    to {
+      stroke-dashoffset: -17.5;
+    }
+}
+
+

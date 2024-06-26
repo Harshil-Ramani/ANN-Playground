@@ -1,0 +1,30 @@
+.datasets{
+    /* border: 2px solid; */
+    margin-left: 1em;
+    border-radius: 7px;
+    width: 11.3em;
+    z-index:1;
+    background-color: rgba(181, 181, 181, 0.286);
+}
+
+.uploadBox{
+    margin-top: 1.3em;
+    margin-bottom: 0.8em;
+}
+
+.datasetBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#upload{
+    display: none;
+}
+
+.uploadButton{
+    display: block;
+    width: 8.5em;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}

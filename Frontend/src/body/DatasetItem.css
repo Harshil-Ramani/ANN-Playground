@@ -1,0 +1,56 @@
+.datasetItem{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5.6em;
+    /* width: 3.5em; */
+    margin: 0.1em 0.6em;
+    position: relative;
+}
+.icon{
+    height: 3.5em;
+    width: 3.5em;
+    border-radius: 7px;
+    background-color: rgb(190, 211, 255);
+}
+
+
+.defaultDataset{
+    background-color:  rgb(181, 190, 221);
+}
+
+.current{
+    box-shadow: 0px 0px 3px 1px black;
+}
+
+.datasetName{
+    font-size: 1em;
+    text-align: center;
+}
+
+.deleteButton {
+    border-radius:7px;
+    height: 1.2em;
+    width: 1.2em;
+    position: absolute;
+    top: 0.1em;
+    right: 0.1em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #000000;
+    background-color: rgb(199, 199, 199);
+  }
+
+.deleteButton span{
+    position: relative;
+    bottom: 0.193em;
+    left: 0.03em;
+}
+
+#canvasBox{
+    height: 3.5em;
+    width: 3.5em;
+}

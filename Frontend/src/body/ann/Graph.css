@@ -1,0 +1,93 @@
+#graph{
+    /* border: 1px solid; */
+    overflow-x: hidden;
+    max-width: 25em;
+}
+
+.showDatapoints{
+  margin-top: 1.8em;
+  /* margin-left: 2em; */
+  width: 8em;
+  /* border: 2px solid; */
+}
+
+.selectDiv{
+    position: relative;
+    /* border: 2px solid  firebrick; */
+}
+
+.dataPointSelect{
+    margin-left: 4em;
+    width: 18.5em;
+    /* border: 2px solid red; */
+    position: relative;
+    display: flex;
+}
+  
+.dataPointSelect select {
+    height: 2.3em;
+    width: 8em;
+    display: inline-block;
+    padding: 0px 0.4em;
+    font-size: 0.95em;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .dataPointSelect select:focus {
+    outline: none;
+  }
+
+  .selectDiv::after {
+    content: '\25BC';
+    font-size: 0.6em;
+    color: rgba(70, 70, 70, 0.862);
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    pointer-events: none;
+  }
+
+  .canvasContainer{
+    margin: 1.7em 4em;
+    position: relative;
+  }
+
+  #canvas{
+    border: 2px solid black;
+    position: absolute;
+    height: 18.5em;
+    width: 18.5em;
+    top:0px;
+    left:0px;
+    z-index: 1;
+  }
+
+  #SVGLayer {
+    position: absolute;
+    height: 18.5em;
+    width: 18.5em;
+    top:0px;
+    left:0px;
+    z-index: 2;
+  }
+
+  #SVGAxes {
+    /* border: 0.01px solid; */
+    height: 23em;
+    width: 23em;
+    position: absolute;
+    top:-16px;
+    left:-40px;
+    z-index: 2;
+  }
+
+  .lossBox{
+    margin-top: 1.8em;
+    margin-left: 2.9em;
+    /* border: 1px solid; */
+  }

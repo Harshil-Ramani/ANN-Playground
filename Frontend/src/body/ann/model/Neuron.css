@@ -1,0 +1,64 @@
+.neuronContainer{
+    display: flex;
+    height: 3em;
+    /* border: 1px solid; */
+    position: relative;
+    margin: 0.3em 0px;
+    align-items: center;
+}
+
+.inputLabel{
+    margin: 0px 0.6em;
+    margin-left: 2em;
+    font-weight: 600;
+}
+
+.neuron{
+    width: 3em;
+    height: 3em;
+    border-radius:7px;
+    border: 2px solid black;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    z-index:1;
+}
+
+.neuronCanvas{
+    width: 3em;
+    height: 3em;
+}
+
+.bias{
+    position: absolute;
+    background-color: gray;
+    height: 0.4em;
+    width: 0.4em;
+    bottom:0.1em;
+    left: -0.5em;
+}
+
+
+.hoverCard{
+    display: none;
+}
+.bias:hover .hoverCard{
+    position:absolute;
+    display: block;
+    top: -0.8em;
+    left:-6em;
+    padding: 0.3em 0.5em;
+    color:white ;
+    background-color: var(--secondry_color);
+    border-radius: 5px;
+}
+
+.arrow{
+    width: 0px; 
+    height: 0px; 
+    border-top: 0.4em solid transparent;
+    border-bottom: 0.4em solid transparent;
+    
+    border-left: 0.4em solid var(--secondry_color);
+    /* border-right: 5px solid; */
+}
